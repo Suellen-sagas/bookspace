@@ -1,0 +1,14 @@
+[build]
+  publish = "public"
+  command = "echo Preparando BookSpace"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  external_node_modules = ["mysql2", "express"]
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+  force = true

@@ -1,0 +1,147 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+     font-family: Arial, Helvetica, sans-serif; 
+     background-color: #F5E8D3; 
+     color: #2C3E50; 
+    }
+
+.header {
+    background-color: #1D2E45;
+    padding: 18px 5%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    border-bottom: 3px solid #B15E41; 
+}
+
+.logo {
+    color: #F5E8D3; 
+    font-size: 25px; 
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+.logo span { 
+    color: #D1A077; 
+}
+
+.header nav { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.header nav a { 
+    color: #D1A077; 
+    text-decoration: none; 
+    font-size: 14px; 
+}
+
+.header nav a:hover { 
+    color: #F5E8D3; 
+}
+
+.header .sair { 
+    background-color: #B15E41; 
+    color: white; 
+    padding: 8px 14px; 
+    border-radius: 6px; 
+}
+
+.container { 
+    width: 90%; 
+    max-width: 1050px; 
+    margin: 40px auto; 
+}
+
+.titulo { 
+    margin-bottom: 28px; 
+}
+
+.titulo h1 { 
+    color: #1D2E45; 
+    font-size: 30px; 
+    margin-bottom: 6px; 
+}
+
+.alugueis { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px; 
+}
+
+.aluguel-card { 
+    background-color: white; 
+    padding: 20px; border-radius: 9px; 
+    display: flex; 
+    align-items: center; 
+    gap: 25px; 
+    border-left: 5px solid #D1A077; 
+    box-shadow: 0 3px 12px rgba(29,46,69,.13); 
+}
+
+.aluguel-card img { 
+    width: 90px; 
+    height: 125px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.aluguel-info { 
+    flex: 1; 
+}
+
+.aluguel-info h2 { 
+    color: #1D2E45; 
+    font-size: 20px; 
+    margin-bottom: 6px; 
+}
+
+.autor { 
+    color: #666; 
+    margin-bottom: 15px; 
+}
+
+.dados p { 
+    font-size: 14px; 
+    margin-bottom: 7px; 
+}
+
+.status { 
+    width: 150px; 
+    text-align: center; 
+}
+
+.status span { 
+    display: inline-block; 
+    background-color: #E8F3ED; 
+    color: #26734D; 
+    padding: 7px 10px; 
+    border-radius: 5px; 
+    font-size: 13px; 
+    font-weight: bold; 
+}
+
+.status p { 
+    margin-top: 9px; 
+    font-size: 13px; 
+    color: #666; 
+}
+
+.devolvido span { 
+    background-color: #EEEEEE; 
+    color: #555; 
+}
+
+@media (max-width: 650px) {
+    .header { flex-direction: column; } 
+
+    .header nav { justify-content: center; }
+
+    .aluguel-card { flex-direction: column; 
+                    align-items: flex-start; } 
+
+    .status { width: auto; text-align: left; } }
+

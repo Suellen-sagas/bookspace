@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | BookSpace</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="sprint2.css">
+</head>
+<body>
+    <header class="header">
+        <a href="livros.html" class="logo">Book<span>Space</span></a>
+        <nav>
+            <a href="livros.html">Livros</a>
+            <a href="alugueis.html">Meus aluguéis</a>
+            <a href="conta.html">Minha conta</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="index.html" class="sair">Sair</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="titulo">
+            <h1>Meu carrinho</h1>
+            <p>Confira o livro antes de finalizar o aluguel.</p>
+        </section>
+
+        <section class="carrinho-area">
+            <article class="item-carrinho">
+                <img src="imagens/livro1.jpg" alt="Capa do livro É Assim que Acaba">
+                <div class="item-info">
+                    <h2>É Assim que Acaba</h2>
+                    <p>Colleen Hoover</p>
+                    <p><strong>Período:</strong> 14 dias</p>
+                    <a href="livros.html" class="remover">Remover</a>
+                </div>
+            </article>
+
+            <aside class="resumo">
+                <h2>Resumo</h2>
+                <p><span>Quantidade de livros</span><strong>1</strong></p>
+                <p><span>Prazo</span><strong>14 dias</strong></p>
+                <p><span>Valor</span><strong>Gratuito</strong></p>
+                <a href="alugueis.html" class="finalizar">Finalizar aluguel</a>
+                <a href="livros.html" class="continuar">Continuar escolhendo</a>
+            </aside>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
